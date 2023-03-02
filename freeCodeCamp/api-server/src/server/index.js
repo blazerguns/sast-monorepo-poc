@@ -2,7 +2,7 @@ const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../../../.env') });
 
 const Sentry = require('@sentry/node');
-// const Tracing = require('@sentry/tracing');
+const Tracing = require('@sentry/tracing');
 const createDebugger = require('debug');
 const _ = require('lodash');
 const loopback = require('loopback');
